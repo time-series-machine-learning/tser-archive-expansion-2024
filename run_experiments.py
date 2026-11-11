@@ -14,15 +14,14 @@ os.environ["TF_NUM_INTRAOP_THREADS"] = "1"
 from aeon.base._base import _clone_estimator
 
 from tsml_eval.experiments import load_and_run_regression_experiment
-from tsml_eval.publications.y2023.tser_archive_expansion.set_tser_exp_regressor import (
-    _set_tser_exp_regressor,
-)
-from tsml_eval.publications.y2023.tser_archive_expansion.tests import (
-    _TSER_ARCHIVE_TEST_RESULTS_PATH,
-)
 from tsml_eval.testing.testing_utils import _TEST_DATA_PATH
 from tsml_eval.utils.arguments import parse_args
 from tsml_eval.utils.experiments import _results_present
+
+from set_tser_exp_regressor import _set_tser_exp_regressor
+
+_REPO_PATH = os.path.dirname(os.path.abspath(__file__))
+_TSER_ARCHIVE_TEST_RESULTS_PATH = f"{_REPO_PATH}/test_output/"
 
 # all regressors ran without duplicates
 regressors_5A2 = [
