@@ -12,15 +12,15 @@ The paper is open access and available from
 
 | Path | Description |
 |---|---|
-| [results/5.A.1](results/5.A.1) | RMSE for 13 regressors on the 19 original TSER archive datasets, 5 resamples |
-| [results/5.A.2](results/5.A.2) | RMSE for the same 13 regressors on the 63 datasets of the expanded archive, 30 resamples |
-| [results/5.B](results/5.B) | RMSE for 11 regressors on 62 datasets, 30 resamples |
-| [results/5.C](results/5.C) | RMSE for 8 regressors on 62 datasets, 30 resamples |
+| [results/figure_6](results/figure_6) | RMSE for 13 regressors on the 19 original TSER archive datasets, 5 resamples |
+| [results/figure_7](results/figure_7) | RMSE for the same 13 regressors on the 63 datasets of the expanded archive, 30 resamples |
+| [results/figure_8](results/figure_8) | RMSE for 13 regressors, including DrCIF and FreshPRINCE, on 62 datasets, 30 resamples |
 | [set_tser_exp_regressor.py](set_tser_exp_regressor.py) | The estimator configurations used in the experiments |
 | [run_experiments.py](run_experiments.py) | Script to run a single experiment |
 | [tser_archive_expansion.ipynb](tser_archive_expansion.ipynb) | Example of using the regressors directly |
 | [static_publication_reqs.txt](static_publication_reqs.txt) | Dependency versions used at the time of publication |
 
+The results folders are named after the figures in the paper which they are used for.
 Each results file has one row per dataset and one column per resample.
 
 ## Datasets
