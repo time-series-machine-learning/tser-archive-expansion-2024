@@ -230,7 +230,7 @@ def _set_tser_exp_regressor(
                     n_jobs=n_jobs,
                     **kwargs,
                 ),
-                None,
+                "all-split",
             )
         ]
         return ChannelEnsembleRegressor(estimators)
