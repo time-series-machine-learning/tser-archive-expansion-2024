@@ -24,7 +24,8 @@ _REPO_PATH = os.path.dirname(os.path.abspath(__file__))
 _TSER_ARCHIVE_TEST_RESULTS_PATH = f"{_REPO_PATH}/test_output/"
 
 # all regressors ran without duplicates
-regressors_5A2 = [
+# the 13 regressors used for Figures 6 and 7
+regressors_figure_6_7 = [
     "1NN-DTW",
     "1NN-ED",
     "5NN-DTW",
@@ -39,8 +40,17 @@ regressors_5A2 = [
     "ROCKET",
     "XGBoost",
 ]
-regressors_5B = ["CNN", "InceptionE", "MultiROCKET", "Ridge", "RotF", "TSF"]
-regressors_5C = ["DrCIF", "FreshPRINCE"]
+# the regressors added for Figure 8
+regressors_figure_8 = [
+    "CNN",
+    "InceptionE",
+    "MultiROCKET",
+    "Ridge",
+    "RotF",
+    "TSF",
+    "DrCIF",
+    "FreshPRINCE",
+]
 
 
 def _run_experiment(args):
