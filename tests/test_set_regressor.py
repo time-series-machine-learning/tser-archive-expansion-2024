@@ -65,7 +65,11 @@ def test_fit_expansion_regressors(name, fast_params):
     X = rng.normal(size=(12, 2, 20))
     y = rng.normal(size=12)
 
-    regressor = _set_tser_exp_regressor(name, random_state=0)
+    try:
+        regressor = _set_tser_exp_regressor(name, random_state=0)
+    except ModuleNotFoundError as err:
+        pytest.skip(f"Optional dependency not installed: {err}")
+
     if fast_params:
         regressor.set_params(**fast_params)
     if name == "TSF":

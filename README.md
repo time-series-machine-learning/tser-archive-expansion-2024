@@ -71,19 +71,16 @@ Running the script without arguments runs ROCKET on a small example dataset incl
 with `tsml-eval` and writes to `test_output/`.
 
 The code in this repository was last checked in November 2026 with `tsml-eval` 0.7.0,
-`aeon` 1.5.0 and `tsml` 0.10.0 on Python 3.12. Note that `aeon` 1.5.0 raises a
-variance validation error (`std <= 1e-7`) for interval-based models such as `DrCIF` on
-datasets containing near-constant series (`Covid3Month`). It is not actively maintained
-against new releases.
+`aeon` 1.5.0 and `tsml` 0.10.0 on Python 3.12. It is not actively maintained against
+new releases.
 
 ### As published
 
 The dependency versions recorded at the time of publication include `aeon` 0.3.0 and
 `tsml` 0.2.1. The code in this repository has since been updated for newer versions,
 so to run the code from that time use the `tsml-eval` repository at the last commit
-which used these versions. This requires Python 3.8 to 3.10. Results from this setup
-may not match the published results files exactly (and `RotF` requires `aeon` 0.4.0 at
-commit `d7d9be64` or `tsml-eval` 0.1.0 below due to a missing mixin in `aeon` 0.3.0).
+which used these versions. This requires Python 3.8 to 3.11. Results from this setup
+may not match the published results files exactly.
 
     git clone https://github.com/time-series-machine-learning/tsml-eval.git
     cd tsml-eval
