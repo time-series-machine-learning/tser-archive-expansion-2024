@@ -129,6 +129,5 @@ If you use this work, please cite the paper:
 
 ## Contact
 
-For questions about the paper or this repository, contact Matthew Middlehurst at
-[m.b.middlehurst@bradford.ac.uk](mailto:m.b.middlehurst@bradford.ac.uk) or on the
-[aeon Discord](https://discord.gg/D6rzqHGKRJ) (`matthewmiddlehurst`).
+For questions about the paper or this repository, feel free to email the authors or
+contact us on the [aeon Discord](https://discord.gg/D6rzqHGKRJ).
