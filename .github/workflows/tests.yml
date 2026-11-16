@@ -22,11 +22,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      # the optional dependencies are needed to fit the regressors in the tests
       - name: Install
-        run: python -m pip install tsml-eval tsml pytest
+        run: python -m pip install tsml-eval tsml pytest tsfresh xgboost
 
       - name: Show dependencies
         run: python -m pip list
 
       - name: Run tests
-        run: python -m pytest
+        run: python -m pytest -rs
